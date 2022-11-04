@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista zadań</title>
+    <link rel="icon" href="images/list.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1 class="header">Lista zadań</h1>
+
+        <section class="section">
+            <h3 class="section__header">Dodaj nowe zadanie</h3>
+
+                <form class="form js-form">
+                    <input class=" form__text js-newTask" autofocus placeholder="Co jest do zrobienia?">
+                    <button class="form__button">Dodaj zadanie</button>
+                </form>
+           
+        </section>
+
+
+        <section class="section">
+            <h3 class="section__header">Lista zadań</h3>
+                <ul class="list js-tasks">
+                </ul>
+           
+        </section>
+    </div>
+
+
+</body>
+
+</html>

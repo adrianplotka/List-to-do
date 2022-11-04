@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: hsl(0deg 0% 90%);
+    justify-content: center;
+    word-break: break-word;
+}
