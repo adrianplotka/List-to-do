@@ -22,20 +22,21 @@
 .list__button {
     width: 30px;
     height: 30px;
+    transition: 1s;
 }
 
 .list__button--green {
-    background-color: hsl(120, 100%, 25%);
+    background-color: hsl(120, 100%, 30%);
     border: none;
     margin-right: 10px;
 }
 
 .list__button--green:hover {
-    background-color: hsl(120, 100%, 30%)
+    background-color: hsl(120, 100%, 35%)
 }
 
 .list__button--green:active {
-    background-color: hsl(120, 100%, 35%)
+    background-color: hsl(120, 100%, 40%)
 }
 
 .list__button--red {

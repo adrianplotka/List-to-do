@@ -18,10 +18,12 @@
     color: white;
     border: 2px solid teal;
     cursor: pointer;
+    transition: 1s;
 }
 
 .form__button:hover {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.05);
 }
 
 .form__button:active {
