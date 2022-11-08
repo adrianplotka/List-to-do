@@ -37,6 +37,12 @@
 
 @media(max-width:767px) {
     .section__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100% ;
+    }
+
+    .section__button {
+       display: flex;
+       width: 100%;
+       justify-content: center
     }
 }
