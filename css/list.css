@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.list__item--hide {
+    display: none;
+}
+
 .list__item--done {
     text-decoration-line: line-through;
 }
