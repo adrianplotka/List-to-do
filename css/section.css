@@ -4,9 +4,24 @@
 }
 
 .section__header {
-    border-bottom: 2px solid hsl(0deg 0% 90%);
-    padding: 15px;
-    margin: 0px;
+    padding: 15px 20px;
     font-size: 20px;
-    font-weight: 700;
+}
+
+.section__header--first {
+    border-bottom: 2px solid hsl(0deg 0% 90%);
+}
+
+.section__container {
+    display: grid;
+    align-items: center;
+    border-bottom: 2px solid hsl(0deg 0% 90%);
+    grid-template-columns: 1fr auto;
+}
+
+.section__button {
+    background-color: transparent;
+    border: none;
+    color: teal;
+    padding: 15px;
 }

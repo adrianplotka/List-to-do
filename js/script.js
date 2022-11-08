@@ -85,11 +85,11 @@
    <button class = "section__button js-toogleHideDoneTask" ${tasks.some(({ done }) => done) ? "" : "disabled" }>
    ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
    </button>
-   <button class = "section__button js-markAllTasksDone" ${tasks.every (({ done }) => done ) ? "disabled" : ""}>
+   <button class = "section__button js-markAllTasksDone" ${tasks.every (({ done }) => done ) ? "disabled" : ""}> 
    Ukończ wszystkie 
    </button>
    `;
-   
+
   };
 
   const bindButtonsEvents = () => {
