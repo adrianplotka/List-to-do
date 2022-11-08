@@ -22,6 +22,21 @@
 .section__button {
     background-color: transparent;
     border: none;
-    color: teal;
+    color: hsl(180, 100%, 30%);
     padding: 15px;
+    transition: 1s;
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__button:disabled {
+    color: rgb(170, 163, 163);
+}
+
+@media(max-width:767px) {
+    .section__container {
+        grid-template-columns: 1fr;
+    }
 }
