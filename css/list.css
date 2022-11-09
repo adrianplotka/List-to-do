@@ -5,7 +5,7 @@
 .list__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    margin: 10px;
+    gap:20px;
     padding: 10px;
     border-bottom: 2px solid hsl(0deg 0% 90%);
     align-items: center;
@@ -23,12 +23,13 @@
     width: 30px;
     height: 30px;
     transition: 1s;
+    padding: 0px;
+    cursor: pointer;
 }
 
 .list__button--green {
     background-color: hsl(120, 100%, 30%);
     border: none;
-    margin-right: 10px;
 }
 
 .list__button--green:hover {

@@ -25,6 +25,7 @@
     color: hsl(180, 100%, 30%);
     padding: 15px;
     transition: 1s;
+    cursor: pointer;
 }
 
 .section__button:hover {
