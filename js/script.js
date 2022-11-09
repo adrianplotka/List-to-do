@@ -41,7 +41,6 @@
 		tasks = tasks.map((tasks) => ({
 			...tasks,
 			done: true,
-
 		}));
 
 		render();
@@ -71,21 +70,20 @@
 
 		for (const task of tasks) {
 			tasksListHTMLContent += `
-      <li
-      class="list__item ${hideDoneTasks && task.done ? "list__item--hide" : ""} ">
-          <button class="list__button list__button--green js-done">
-          ${task.done ? " ✔ " : ""}
-          </button>
-          <p class=" ${task.done ? " list__item--done " : ""}">
-          ${task.content}
-          </p>
-          <button class="list__button list__button--red js-remove">
-          🗑️
-          </button>
-      </li>
-      `
+      			<li
+      			class="list__item ${hideDoneTasks && task.done ? "list__item--hide" : ""} ">
+         		 <button class="list__button list__button--green js-done">
+          		${task.done ? " ✔ " : ""}
+          		</button>
+          		<p class=" ${task.done ? " list__item--done " : ""}">
+          		${task.content}
+          		</p>
+          		<button class="list__button list__button--red js-remove">
+          		🗑️
+          		</button>
+     			 </li>
+      			`
 		}
-
 
 		document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
 	};
@@ -93,7 +91,7 @@
 	const renderButtons = () => {
 		const listButtons = document.querySelector(".js-buttons")
 
-		if (tasks.length === 0) {
+		if (!tasks.length) {
 			listButtons.innerHTML = "";
 
 			return;
@@ -112,19 +110,15 @@
 
 	const bindButtonsEvents = () => {
 		const toggleHideDoneTaskButton = document.querySelector(".js-toggleHideDoneTask");
-
 		if (toggleHideDoneTaskButton) {
 			toggleHideDoneTaskButton.addEventListener("click", () => {
-
 				toggleHideDoneTask();
 			});
 		};
 
-	const markAllTasksDoneButton = document.querySelector(".js-markAllTasksDone");
-
+		const markAllTasksDoneButton = document.querySelector(".js-markAllTasksDone");
 		if (markAllTasksDoneButton) {
 			markAllTasksDoneButton.addEventListener("click", () => {
-
 				markAllTasksDone();
 			});
 		};
@@ -140,17 +134,17 @@
 
 	const onFormSubmit = (event) => {
 		event.preventDefault();
-  
+
 		const newTaskElement = document.querySelector(".js-newTask");
 		const newTaskContent = newTaskElement.value.trim();
-  
+
 		if (newTaskContent === "") {
-		    return;
+			return;
 		}
-  
+
 		newTaskElement.value = "";
 		newTaskElement.focus();
-  
+
 		addNewTask(newTaskContent);
 	};
 
